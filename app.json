@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "dough-calculator-app",
-    "slug": "dough-calculator-app",
-    "version": "1.0.0",
+    "name": "Pizza Dough Calculator",
+    "slug": "PizzaDoughCalculator",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -18,13 +18,20 @@
       "supportsTablet": true
     },
     "android": {
+      "versionCode": 2,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.rafaelmerlotto.PizzaDoughCalculator"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "67844361-7dd0-4803-acef-0fbdf89219fc"
+      }
     }
   }
 }
