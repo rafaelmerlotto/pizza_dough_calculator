@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "229351746389",
+    "project_id": "pizzadoughcalculator",
+    "storage_bucket": "pizzadoughcalculator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:229351746389:android:e081baa567731a654b9ddc",
+        "android_client_info": {
+          "package_name": "com.rafaelmerlotto.PizzaDoughCalculator"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDF9eYMuZtCTBq9RFlR2wBtoBPjruhssdg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

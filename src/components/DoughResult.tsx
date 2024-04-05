@@ -12,7 +12,7 @@ export default function DoughResult({ dough }) {
             <View style={styles.containerText}><Text style={styles.text}>Water: {Number(water).toFixed()}g</Text></View>
             <View style={styles.containerText}><Text style={styles.text}>Salt: {Number(salt).toFixed()}g</Text></View>
             <View style={styles.containerText}><Text style={styles.text}>Yeast: {Number(yeast).toFixed(1)}g</Text></View>
-            <View style={styles.containerTextLastChild}><Text style={styles.text}>Total of the dough: {Number(total).toFixed()}g</Text></View>
+            <View style={styles.containerTextLastChild}><Text style={styles.text}>Total dough: {Number(total).toFixed()}g</Text></View>
         </View>
     )
 }
@@ -22,9 +22,8 @@ const styles = StyleSheet.create({
         width: "90%",
         height: 50,
         display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
         flexDirection: "row",
+        justifyContent: "center",
         flexWrap: "wrap",
         alignItems: "center",
         marginTop: 30,
@@ -38,8 +37,8 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
         borderWidth: 1,
-        backgroundColor: "#29252c",
-        borderColor: "#29252c",
+        backgroundColor: "rgba(41, 37, 44, 0.8)",
+        borderColor: "rgba(41, 37, 44, 0.8)",
         borderRadius: 5
     },
     containerTextLastChild: {
@@ -49,8 +48,8 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
         borderWidth: 1,
-        backgroundColor: "#29252c",
-        borderColor: "#29252c",
+        backgroundColor: "rgba(41, 37, 44, 0.8)",
+        borderColor: "rgba(41, 37, 44, 0.8)",
         borderRadius: 5
     },
     text: {

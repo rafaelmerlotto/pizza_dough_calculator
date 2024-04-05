@@ -1,25 +1,31 @@
-
-import { StyleSheet, View } from 'react-native';
 import Overview from './src/pages/Overview';
-import { DrawerContentScrollView, createDrawerNavigator } from '@react-navigation/drawer';
+import {createDrawerNavigator } from '@react-navigation/drawer';
 import 'react-native-gesture-handler';
-import { NavigationContainer } from '@react-navigation/native';
-
+import { NavigationContainer, TypedNavigator } from '@react-navigation/native';
 import CustomDrawer from './src/components/CustomDrawer';
 import Info from './src/pages/Info';
+import List from './src/pages/List';
+
+
+export type RootDrawerNavigatorParamsList = {
+  overview: undefined;
+  list: undefined;
+  info: undefined;
+ 
+};
 
 export default function App() {
 
 
-  const Drawer = createDrawerNavigator();
+  const Drawer = createDrawerNavigator<RootDrawerNavigatorParamsList>();
 
 
   return (
 
     <NavigationContainer >
-      <Drawer.Navigator initialRouteName='Overview' drawerContent={props => <CustomDrawer {...props} />} >
+      <Drawer.Navigator initialRouteName='overview' drawerContent={props => <CustomDrawer props={props}  />} >
         <Drawer.Screen
-          name='Overview'
+          name='overview'
           component={Overview}
           options={{
             headerStyle: {
@@ -45,7 +51,19 @@ export default function App() {
 
       }}
       />
+<Drawer.Screen
+     name='list'
+      component={List}
+      options={{
+        headerStyle: {
+          backgroundColor: "#a64942",
+          height: 0,
 
+        },
+
+
+      }}
+      />
  
       
 
